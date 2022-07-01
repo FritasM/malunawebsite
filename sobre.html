@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<title>Maluna | Condiçoes</title>
+</head>
+<style>
+		*{
+		top: 0;
+		margin: 0;
+	}
+	body{
+		background-color: #363940;
+		color: #dbdee3;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+	#rodar{
+		margin-top: 25%;
+		width: 70px;
+		height: 70px;
+	}
+</style>
+<body>
+<div id="carregar" style="display: none;">
+
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Sobre</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Login</a>
+  </li>
+</ul>
+
+<h1>Equipe</h1>
+
+<div class="card" style="background-color: #0d6efd; margin-left: 300px; margin-right: 300px;">
+  <img src="https://cdn.discordapp.com/avatars/790042820495802408/d6cbf05d38512eb2eb7be47bbf34d057.png?size=2048" class="card-img-top" alt="..." style="height: 200px;">
+
+  <div class="card-body">
+    <h5 class="card-title">Fritas</h5>
+    <p class="card-text">CEO</p>
+    <a href="https://discord.gg/TtcaVwkB2h" class="btn btn-primary">Pai e fundador do bot maluna</a>
+  </div>
+</div>
+
+</div>
+
+
+<div id="rodar" class="spinner-border text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<script>
+	const rodinha = document.querySelector("#rodar");
+	const carregar = document.querySelector("#carregar");
+setTimeout(() => {
+rodinha.style.display = 'none';
+carregar.style.display = 'block';
+
+}, 1100)
+</script>
+
+</body>
+</html>

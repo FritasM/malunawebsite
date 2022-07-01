@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<title>Maluna | Home</title>
+</head>
+<style>
+	*{
+		top: 0;
+		margin: 0;
+		text-decoration: none;
+	}
+	body{
+		background-color: #363940;
+		color: #dbdee3;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+	.icon{
+		display: block;
+		border-radius: 100%;
+		margin-left: 35%;
+		margin-top: 10px;
+	}
+		#rodar{
+		margin-top: 25%;
+		width: 70px;
+		height: 70px;
+	}
+</style>
+<body>
+
+<div id="carregar" style="display: none;">
+
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sobre.html">Sobre</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Login</a>
+  </li>
+</ul>
+
+	<div>
+	<img class="icon" style="width: 30%" src="https://images-ext-2.discordapp.net/external/5W2dqxoMCVPpSyWjtYpUN8gifRlUSRJ4KdMTuvMLwoA/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/967940907112472636/4c641fcb37c37fdfa63ebcdea4622486.png?width=344&height=344" alt="Icon Malu">
+	<h1>Maluna - Bot</h1>
+	<h2>Maluna um bot que vai ajudar a sua comunidade</h2>
+	<button type="button" class="btn btn-success">Me Adicione</button>
+	<button type="button" class="btn btn-info" style="color: #000;" onclick="suporte1()">Servidor De Suporte</button>
+	<button type="button" class="btn btn-warning" onclick="sobre()" style="color: #000;">Sobre Mim</button>
+	</div>
+
+	<div id="alert" class="alert alert-primary" role="alert" style="margin-left: 40px; margin-right: 40px; top: 20px;">
+  Ao acessar esse site você concorda com a nossa politica de coockies <button type="button" class="btn btn-success" onclick="ok()">Entendi</button>
+</div>
+
+</div>
+
+<div id="rodar" class="spinner-border text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script>
+	const rodinha = document.querySelector("#rodar");
+	const carregar = document.querySelector("#carregar");
+	const alert = document.querySelector("#alert");
+setTimeout(() => {
+rodinha.style.display = 'none';
+carregar.style.display = 'block';
+
+}, 1200)
+
+function suporte1(){
+	window.location.href = 'https://discord.gg/TtcaVwkB2h'
+}
+
+	function sobre(){
+		window.location.href = 'sobre.html'
+	}
+
+	function ok(){
+alert.style.display = 'none';
+	}
+</script>
+
+</body>
+</html>
